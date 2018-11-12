@@ -4,6 +4,7 @@ char* memReg[8] = {"(%eax)","(%ecx)","(%edx)","(%ebx)","(%esp)","(%ebp)","(%esi)
 
 
 int isReg(char str[]){
+
 	int i=0;
 	for(i=0;i<8;i++){
 		if(!strcmp(str,reg[i]))
