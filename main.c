@@ -20,10 +20,8 @@ int main(int argc, char* argv[])
 	FILE *ofp = fopen(ofname, "w");
 
 	mcode = (char*) malloc (sizeof(char)*20);
-
 	while (!feof(ifp)){
 		fscanf(ifp, "%s %s\n", op, args);
-
 		// translate assembly into machine-code 
 		if(!instr_trans(op, args, mcode)){
 			printf("Error: %s %s cannot be translated\n", op, args);
