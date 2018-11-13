@@ -50,5 +50,6 @@ int instr_trans(char *op, char *args, char* mcode)
 		strcpy(mcode,"error");
 		return 0;
 		}
+
 	return 1;	
 }
