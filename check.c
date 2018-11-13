@@ -27,6 +27,7 @@ int isMemReg(char str[]){
 		}
 	}
 
+
 	//is str can mem(0x) or imm($0x)
 	if(strstr(str,"0x")!=NULL){
 		if(!strncmp(str,"$",1))
